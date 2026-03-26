@@ -33,31 +33,31 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
 
   return (
     <>
-      <header 
+      <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4",
+          "sticky top-0 z-50 transition-all duration-500 px-6 py-4",
           isScrolled && "py-3"
         )}
       >
-        <div 
+        <div
           className={cn(
             "mx-auto max-w-7xl rounded-full border backdrop-blur-2xl transition-all duration-500",
-            isScrolled 
-              ? "bg-background/80 border-border/50 shadow-lg shadow-foreground/5" 
+            isScrolled
+              ? "bg-background/80 border-border/50 shadow-lg shadow-foreground/5"
               : "bg-transparent border-transparent"
           )}
         >
           <div className="flex items-center justify-between px-6 py-3">
             {/* Logo */}
-            <button 
-              onClick={() => setPage('home')} 
+            <button
+              onClick={() => setPage('home')}
               className="flex items-center gap-3 group"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue via-brand-violet to-brand-indigo flex items-center justify-center shadow-lg shadow-brand-violet/30 group-hover:scale-110 transition-transform">
-                <span className="text-primary-foreground font-black text-lg font-grotesk">D</span>
+                <span className="text-primary-foreground font-black text-lg font-grotesk">B</span>
               </div>
               <span className="text-xl font-black tracking-tight font-grotesk text-foreground">
-                Digital<span className="text-brand-violet">Fabric</span>
+                Breakthru<span className="text-brand-violet">.ai</span>
               </span>
             </button>
 
@@ -69,8 +69,8 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
                   onClick={() => handleNavClick(link.id)}
                   className={cn(
                     "px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 font-grotesk",
-                    currentPage === link.id 
-                      ? "bg-foreground/10 text-foreground" 
+                    currentPage === link.id
+                      ? "bg-foreground/10 text-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
                   )}
                 >
@@ -81,7 +81,7 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
 
             {/* Actions */}
             <div className="flex items-center gap-3">
-              <button 
+              <button
                 onClick={toggleTheme}
                 className="p-3 rounded-full bg-foreground/5 hover:bg-foreground/10 transition-colors"
               >
@@ -100,7 +100,7 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
               </button>
 
               {/* Mobile menu toggle */}
-              <button 
+              <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden p-3 rounded-full bg-foreground/5 hover:bg-foreground/10 transition-colors"
               >
@@ -116,17 +116,17 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
       </header>
 
       {/* Mobile Menu */}
-      <div 
+      <div
         className={cn(
           "fixed inset-0 z-40 lg:hidden transition-all duration-500",
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
       >
-        <div 
+        <div
           className="absolute inset-0 bg-background/95 backdrop-blur-xl"
           onClick={() => setIsMobileMenuOpen(false)}
         />
-        
+
         <nav className="relative z-10 flex flex-col items-center justify-center min-h-screen gap-6 p-8">
           {FULL_NAV_LINKS.map((link, i) => (
             <button
