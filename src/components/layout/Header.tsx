@@ -172,7 +172,7 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-6 border-b border-border/30">
             <span className="text-lg font-black uppercase tracking-tight font-grotesk text-foreground">
-              Navigate
+              breakthru.ai
             </span>
             <button
               onClick={() => setIsNavDrawerOpen(false)}

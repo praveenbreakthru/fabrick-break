@@ -11,7 +11,7 @@ const STORY_PREVIEWS = [
   { id: 'labs', category: 'Experimental', title: 'BREAKTHRU LABS', color: 'from-brand-cyan to-brand-violet' },
   { id: 'finance', category: 'Fintech', title: 'The Neo-Bank Heist', color: 'from-brand-blue to-brand-cyan' },
   { id: 'manufacturing', category: 'Manufacturing', title: 'Ghost in the Machine', color: 'from-brand-orange to-destructive' },
-  { id: 'telecom', category: 'Telecom', title: 'Signal vs. Noise', color: 'from-brand-violet to-brand-indigo' }
+  { id: 'telecom', category: 'Telecom', title: 'Signal vs Noise', color: 'from-brand-violet to-brand-indigo' }
 ];
 
 const HeroSection = ({ setPage }: HeroSectionProps) => {
