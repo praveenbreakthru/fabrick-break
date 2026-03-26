@@ -64,10 +64,10 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
               className="flex items-center gap-3 group"
             >
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue via-brand-violet to-brand-indigo flex items-center justify-center shadow-lg shadow-brand-violet/30 group-hover:scale-110 transition-transform">
-                <span className="text-primary-foreground font-black text-lg font-grotesk">D</span>
+                <span className="text-primary-foreground font-black text-lg font-grotesk">b</span>
               </div>
               <span className="text-xl font-black tracking-tight font-grotesk text-foreground">
-                Digital<span className="text-brand-violet">Fabric</span>
+                breakthru<span className="text-brand-violet">.ai</span>
               </span>
             </button>
 

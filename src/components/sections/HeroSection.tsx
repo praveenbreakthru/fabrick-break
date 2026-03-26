@@ -24,10 +24,7 @@ const HeroSection = ({ setPage }: HeroSectionProps) => {
           <div className="space-y-8 max-w-3xl">
             {/* Status badge */}
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-card/40 dark:bg-card/5 border border-border/60 dark:border-border/10 backdrop-blur-xl animate-fade-in shadow-lg shadow-foreground/5 dark:shadow-background/20">
-              <div className="w-2 h-2 rounded-full bg-brand-emerald animate-pulse shadow-[0_0_10px_hsl(var(--brand-emerald)/0.5)]" />
-              <span className="text-muted-foreground text-sm font-mono tracking-widest uppercase">
 
-              </span>
             </div>
 
             {/* Main heading */}
