@@ -71,24 +71,6 @@ const Header = ({ currentPage, setPage }: HeaderProps) => {
               </span>
             </button>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1">
-              {FULL_NAV_LINKS.slice(0, 6).map(link => (
-                <button
-                  key={link.id}
-                  onClick={() => handleNavClick(link.id)}
-                  className={cn(
-                    "px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 font-grotesk",
-                    currentPage === link.id
-                      ? "bg-foreground/10 text-foreground"
-                      : "text-muted-foreground hover:text-foreground hover:bg-foreground/5"
-                  )}
-                >
-                  {link.name}
-                </button>
-              ))}
-            </nav>
-
             {/* Actions */}
             <div className="flex items-center gap-3">
               <button
